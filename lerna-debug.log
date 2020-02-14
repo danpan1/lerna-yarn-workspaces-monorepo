@@ -1,0 +1,28 @@
+0 silly argv { _: [ 'exec' ],
+0 silly argv   since: 'oeigin/master',
+0 silly argv   args: [],
+0 silly argv   '--': [ 'echo', '123' ],
+0 silly argv   lernaVersion: '3.19.0',
+0 silly argv   '$0': 'lerna' }
+1 notice cli v3.19.0
+2 verbose rootPath /Users/danilpankrashin/chilipiper/lerna-yarn-workspaces-monorepo
+3 info versioning independent
+4 notice filter changed since "oeigin/master"
+5 silly hasTags
+6 verbose hasTags true
+7 silly git-describe.sync "button@1.0.3-2-g09a9535" => {"lastTagName":"button@1.0.3","lastVersion":"1.0.3","refCount":"2","sha":"09a9535","isDirty":false}
+8 info Looking for changed packages since oeigin/master
+9 silly checking diff packages/button
+10 error Error: Command failed: git diff --name-only oeigin/master -- packages/button
+10 error fatal: bad revision 'oeigin/master'
+10 error
+10 error
+10 error     at makeError (/Users/danilpankrashin/.nvm/versions/node/v10.17.0/lib/node_modules/lerna/node_modules/execa/index.js:174:9)
+10 error     at Function.module.exports.sync (/Users/danilpankrashin/.nvm/versions/node/v10.17.0/lib/node_modules/lerna/node_modules/execa/index.js:338:15)
+10 error     at Object.execSync (/Users/danilpankrashin/.nvm/versions/node/v10.17.0/lib/node_modules/lerna/node_modules/@lerna/child-process/index.js:26:16)
+10 error     at diffSinceIn (/Users/danilpankrashin/.nvm/versions/node/v10.17.0/lib/node_modules/lerna/node_modules/@lerna/collect-updates/lib/make-diff-predicate.js:63:23)
+10 error     at hasDiffSinceThatIsntIgnored (/Users/danilpankrashin/.nvm/versions/node/v10.17.0/lib/node_modules/lerna/node_modules/@lerna/collect-updates/lib/make-diff-predicate.js:27:18)
+10 error     at isCandidate (/Users/danilpankrashin/.nvm/versions/node/v10.17.0/lib/node_modules/lerna/node_modules/@lerna/collect-updates/collect-updates.js:88:77)
+10 error     at packages.forEach (/Users/danilpankrashin/.nvm/versions/node/v10.17.0/lib/node_modules/lerna/node_modules/@lerna/collect-updates/lib/collect-packages.js:11:9)
+10 error     at Map.forEach (<anonymous>)
+10 error     at collectPackages (/Users/danilpankrashin/.nvm/versions/node/v10.17.0/lib/node_modules/lerna/node_modules/@lerna/collect-updates/lib/collect-packages.js:10:12)
