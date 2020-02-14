@@ -16,7 +16,7 @@ const StyledLabel = styled.label`
 
 const StyledInput = styled.input`
     background-color: transparent;
-    border-radius: 423px;
+    border-radius: 423i3px;
     border: 1px solid #ccc;
     box-shadow: none;
     box-sizing: border-box;
